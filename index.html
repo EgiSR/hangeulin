@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Roboto+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 right-0 z-10">
+        <div class="container  py-4 flex justify-between mx-auto">
+            <div>
+                <h1 class="text-4xl font-bold">Hangeul<span class="text-[#F2C033]">in</span></h1>
+            </div>
+            <ul class="md:flex hidden gap-6">
+                <li>Kursus</li>
+                <li>Beasiswa</li>
+                <li>Travel</li>
+                <li>Tentang Kami</li>
+            </ul>
+            <div class="hidden md:block">
+                <a class="bg-[#F4C237] text-[13px] font-semibold py-[7px] px-[10px] mt-5 rounded-md" href="">Masuk</a>
+                <a class="" href="">Daftar</a>
+            </div>
+            <button @click="open = true" id="tombol" name="tombol" class="md:hidden">
+                <img src="img/burger-menu-right-svgrepo-com.svg" alt="">
+            </button>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- hero section -->
+    <section class="my-36 mx-4">
+        <div class="container mx-auto">
+            <div class="flex flex-wrap">
+                <div class="w-full lg:w-1/2 order-2 md:order-1">
+                    <div class="md:mt-40">
+                        <h1 class="font-bold text-center md:text-start md:text-3xl mt-6">Solusi <span class="text-[#045285]">Terbaik</span> Untuk Belajar<br>Bahasa Korea</h1>
+                        <p class="font-thin text-center md:text-start text-[13px]  mt-5">Kursus online gratis yang menyediakan beragam fasilitas dan dapat membantu<br>dalam mengasah kemampuan berbahasa koreamu</p>
+                        <div class="flex justify-center md:justify-start">
+                            <a href="" class="bg-[#F4C237] text-[13px] font-semibold py-[7px] px-[10px] mt-5 rounded-md">Gabung Sekarang</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/2 order-1 md:order-2">
+                    <div>
+                        <img class="max-x-full mx-auto px-3" src="img/Ill-Vect.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end hero section -->
+
+    <!-- pilihan paket -->
+    <section class="my-36">
+        <div class="container mx-auto">
+            <div class="mx-4 md:mx-0">
+                <h1 class="font-bold text-4xl text-center">Pilihan Paket</h1>
+                <p class="font-light text-center text-base mt-4">Quisque aliquam, faucibus est massa phasellus turpis pellentesque nam tristique. Facilisi varius sed ridiculus cras lacus. Elementum in in convallis sit vitae donec amet.</p>
+            </div>
+
+            <div class="grid grid-cols-12 gap-6 mx-4 mt-16 md:mx-0">
+                <div class="bg-[#FEF7E5] col-span-12 md:col-span-4 rounded-2xl">
+                    <h1 class="text-center">Paket 1</h1>
+                    <ul>
+                        <li class="mt-6 ml-4">
+                            <svg class="float-left" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="17.5" cy="17.5" r="17.5" fill="#F4C237"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M26.5303 11.9697C26.8232 12.2626 26.8232 12.7374 26.5303 13.0303L15.5303 24.0303C15.2374 24.3232 14.7626 24.3232 14.4697 24.0303L9.46967 19.0303C9.17678 18.7374 9.17678 18.2626 9.46967 17.9697C9.76256 17.6768 10.2374 17.6768 10.5303 17.9697L15 22.4393L25.4697 11.9697C25.7626 11.6768 26.2374 11.6768 26.5303 11.9697Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span class="ml-2">Lorem, ipsum.</span>
+                        </li>
+                        <li class="mt-6 ml-4">
+                            <svg class="float-left" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="17.5" cy="17.5" r="17.5" fill="#F4C237"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M26.5303 11.9697C26.8232 12.2626 26.8232 12.7374 26.5303 13.0303L15.5303 24.0303C15.2374 24.3232 14.7626 24.3232 14.4697 24.0303L9.46967 19.0303C9.17678 18.7374 9.17678 18.2626 9.46967 17.9697C9.76256 17.6768 10.2374 17.6768 10.5303 17.9697L15 22.4393L25.4697 11.9697C25.7626 11.6768 26.2374 11.6768 26.5303 11.9697Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span class="ml-2">Lorem ipsum dolor sit.</span>
+                        </li>
+                        <li class="mt-6 ml-4">
+                            <svg class="float-left" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="17.5" cy="17.5" r="17.5" fill="#F4C237"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M26.5303 11.9697C26.8232 12.2626 26.8232 12.7374 26.5303 13.0303L15.5303 24.0303C15.2374 24.3232 14.7626 24.3232 14.4697 24.0303L9.46967 19.0303C9.17678 18.7374 9.17678 18.2626 9.46967 17.9697C9.76256 17.6768 10.2374 17.6768 10.5303 17.9697L15 22.4393L25.4697 11.9697C25.7626 11.6768 26.2374 11.6768 26.5303 11.9697Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span class="ml-2">Lorem, ipsum dolor.</span>
+                        </li>
+                        <li class="mt-6 ml-4">
+                            <svg class="float-left" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="17.5" cy="17.5" r="17.5" fill="#F4C237"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M26.5303 11.9697C26.8232 12.2626 26.8232 12.7374 26.5303 13.0303L15.5303 24.0303C15.2374 24.3232 14.7626 24.3232 14.4697 24.0303L9.46967 19.0303C9.17678 18.7374 9.17678 18.2626 9.46967 17.9697C9.76256 17.6768 10.2374 17.6768 10.5303 17.9697L15 22.4393L25.4697 11.9697C25.7626 11.6768 26.2374 11.6768 26.5303 11.9697Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span class="ml-2">Lorem ipsum dolor sit amet.</span>
+                        </li>
+                        <li class="mt-6 ml-4">
+                            <svg class="float-left" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="17.5" cy="17.5" r="17.5" fill="#F4C237"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M26.5303 11.9697C26.8232 12.2626 26.8232 12.7374 26.5303 13.0303L15.5303 24.0303C15.2374 24.3232 14.7626 24.3232 14.4697 24.0303L9.46967 19.0303C9.17678 18.7374 9.17678 18.2626 9.46967 17.9697C9.76256 17.6768 10.2374 17.6768 10.5303 17.9697L15 22.4393L25.4697 11.9697C25.7626 11.6768 26.2374 11.6768 26.5303 11.9697Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span class="ml-2">Lorem, ipsum dolor.</span>
+                        </li>
+                        <li class="mt-6 ml-4">
+                            <svg class="float-left" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="17.5" cy="17.5" r="17.5" fill="#F4C237"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M26.5303 11.9697C26.8232 12.2626 26.8232 12.7374 26.5303 13.0303L15.5303 24.0303C15.2374 24.3232 14.7626 24.3232 14.4697 24.0303L9.46967 19.0303C9.17678 18.7374 9.17678 18.2626 9.46967 17.9697C9.76256 17.6768 10.2374 17.6768 10.5303 17.9697L15 22.4393L25.4697 11.9697C25.7626 11.6768 26.2374 11.6768 26.5303 11.9697Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span class="ml-2">Lorem, ipsum.</span>
+                        </li>
+                    </ul>
+                    <div class="flex justify-center my-6 ">
+                        <a href="" class="bg-[#F4C237] text-[13px] font-semibold py-[7px] px-[10px] mt-5 rounded-md">Beli Kelas</a>
+                    </div>                       
+
+                </div>
+
+                <div class="bg-[#FEF7E5] col-span-12 md:col-span-4 rounded-2xl">
+                    <h1 class="text-center">Paket 2</h1>
+                    <ul>
+                        <li class="mt-6 ml-4">
+                            <svg class="float-left" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="17.5" cy="17.5" r="17.5" fill="#F4C237"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M26.5303 11.9697C26.8232 12.2626 26.8232 12.7374 26.5303 13.0303L15.5303 24.0303C15.2374 24.3232 14.7626 24.3232 14.4697 24.0303L9.46967 19.0303C9.17678 18.7374 9.17678 18.2626 9.46967 17.9697C9.76256 17.6768 10.2374 17.6768 10.5303 17.9697L15 22.4393L25.4697 11.9697C25.7626 11.6768 26.2374 11.6768 26.5303 11.9697Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span class="ml-2">Lorem, ipsum.</span>
+                        </li>
+                        <li class="mt-6 ml-4">
+                            <svg class="float-left" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="17.5" cy="17.5" r="17.5" fill="#F4C237"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M26.5303 11.9697C26.8232 12.2626 26.8232 12.7374 26.5303 13.0303L15.5303 24.0303C15.2374 24.3232 14.7626 24.3232 14.4697 24.0303L9.46967 19.0303C9.17678 18.7374 9.17678 18.2626 9.46967 17.9697C9.76256 17.6768 10.2374 17.6768 10.5303 17.9697L15 22.4393L25.4697 11.9697C25.7626 11.6768 26.2374 11.6768 26.5303 11.9697Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span class="ml-2">Lorem, ipsum dolor.</span>
+                        </li>
+                        <li class="mt-6 ml-4">
+                            <svg class="float-left" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="17.5" cy="17.5" r="17.5" fill="#F4C237"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M26.5303 11.9697C26.8232 12.2626 26.8232 12.7374 26.5303 13.0303L15.5303 24.0303C15.2374 24.3232 14.7626 24.3232 14.4697 24.0303L9.46967 19.0303C9.17678 18.7374 9.17678 18.2626 9.46967 17.9697C9.76256 17.6768 10.2374 17.6768 10.5303 17.9697L15 22.4393L25.4697 11.9697C25.7626 11.6768 26.2374 11.6768 26.5303 11.9697Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span class="ml-2">Lorem ipsum dolor sit.</span>
+                        </li>
+                        <li class="mt-6 ml-4">
+                            <svg class="float-left" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="17.5" cy="17.5" r="17.5" fill="#F4C237"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M26.5303 11.9697C26.8232 12.2626 26.8232 12.7374 26.5303 13.0303L15.5303 24.0303C15.2374 24.3232 14.7626 24.3232 14.4697 24.0303L9.46967 19.0303C9.17678 18.7374 9.17678 18.2626 9.46967 17.9697C9.76256 17.6768 10.2374 17.6768 10.5303 17.9697L15 22.4393L25.4697 11.9697C25.7626 11.6768 26.2374 11.6768 26.5303 11.9697Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span class="ml-2">Lorem ipsum dolor sit amet.</span>
+                        </li>
+                        <li class="mt-6 ml-4">
+                            <svg class="float-left" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="17.5" cy="17.5" r="17.5" fill="#F4C237"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M26.5303 11.9697C26.8232 12.2626 26.8232 12.7374 26.5303 13.0303L15.5303 24.0303C15.2374 24.3232 14.7626 24.3232 14.4697 24.0303L9.46967 19.0303C9.17678 18.7374 9.17678 18.2626 9.46967 17.9697C9.76256 17.6768 10.2374 17.6768 10.5303 17.9697L15 22.4393L25.4697 11.9697C25.7626 11.6768 26.2374 11.6768 26.5303 11.9697Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span class="ml-2">Lorem, ipsum.</span>
+                        </li>
+                        <li class="mt-6 ml-4">
+                            <svg class="float-left" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="17.5" cy="17.5" r="17.5" fill="#F4C237"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M26.5303 11.9697C26.8232 12.2626 26.8232 12.7374 26.5303 13.0303L15.5303 24.0303C15.2374 24.3232 14.7626 24.3232 14.4697 24.0303L9.46967 19.0303C9.17678 18.7374 9.17678 18.2626 9.46967 17.9697C9.76256 17.6768 10.2374 17.6768 10.5303 17.9697L15 22.4393L25.4697 11.9697C25.7626 11.6768 26.2374 11.6768 26.5303 11.9697Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span class="ml-2">Lorem, ipsum.</span>
+                        </li>
+                    </ul>
+                    <div class="flex justify-center my-6 ">
+                        <a href="" class="bg-[#F4C237] text-[13px] font-semibold py-[7px] px-[10px] mt-5 rounded-md">Beli Kelas</a>
+                    </div>                       
+
+                </div>
+
+                <div class="bg-[#FEF7E5] col-span-12 md:col-span-4 rounded-2xl">
+                    <h1 class="text-center">Paket 3</h1>
+                    <ul>
+                        <li class="mt-6 ml-4">
+                            <svg class="float-left" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="17.5" cy="17.5" r="17.5" fill="#F4C237"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M26.5303 11.9697C26.8232 12.2626 26.8232 12.7374 26.5303 13.0303L15.5303 24.0303C15.2374 24.3232 14.7626 24.3232 14.4697 24.0303L9.46967 19.0303C9.17678 18.7374 9.17678 18.2626 9.46967 17.9697C9.76256 17.6768 10.2374 17.6768 10.5303 17.9697L15 22.4393L25.4697 11.9697C25.7626 11.6768 26.2374 11.6768 26.5303 11.9697Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span class="ml-2">Lorem ipsum dolor sit.</span>
+                        </li>
+                        <li class="mt-6 ml-4">
+                            <svg class="float-left" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="17.5" cy="17.5" r="17.5" fill="#F4C237"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M26.5303 11.9697C26.8232 12.2626 26.8232 12.7374 26.5303 13.0303L15.5303 24.0303C15.2374 24.3232 14.7626 24.3232 14.4697 24.0303L9.46967 19.0303C9.17678 18.7374 9.17678 18.2626 9.46967 17.9697C9.76256 17.6768 10.2374 17.6768 10.5303 17.9697L15 22.4393L25.4697 11.9697C25.7626 11.6768 26.2374 11.6768 26.5303 11.9697Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span class="ml-2">Lorem, ipsum.</span>
+                        </li>
+                        <li class="mt-6 ml-4">
+                            <svg class="float-left" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="17.5" cy="17.5" r="17.5" fill="#F4C237"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M26.5303 11.9697C26.8232 12.2626 26.8232 12.7374 26.5303 13.0303L15.5303 24.0303C15.2374 24.3232 14.7626 24.3232 14.4697 24.0303L9.46967 19.0303C9.17678 18.7374 9.17678 18.2626 9.46967 17.9697C9.76256 17.6768 10.2374 17.6768 10.5303 17.9697L15 22.4393L25.4697 11.9697C25.7626 11.6768 26.2374 11.6768 26.5303 11.9697Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span class="ml-2">Lorem, ipsum dolor.</span>
+                        </li>
+                        <li class="mt-6 ml-4">
+                            <svg class="float-left" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="17.5" cy="17.5" r="17.5" fill="#F4C237"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M26.5303 11.9697C26.8232 12.2626 26.8232 12.7374 26.5303 13.0303L15.5303 24.0303C15.2374 24.3232 14.7626 24.3232 14.4697 24.0303L9.46967 19.0303C9.17678 18.7374 9.17678 18.2626 9.46967 17.9697C9.76256 17.6768 10.2374 17.6768 10.5303 17.9697L15 22.4393L25.4697 11.9697C25.7626 11.6768 26.2374 11.6768 26.5303 11.9697Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span class="ml-2">Lorem ipsum dolor sit amet.</span>
+                        </li>
+                        <li class="mt-6 ml-4">
+                            <svg class="float-left" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="17.5" cy="17.5" r="17.5" fill="#F4C237"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M26.5303 11.9697C26.8232 12.2626 26.8232 12.7374 26.5303 13.0303L15.5303 24.0303C15.2374 24.3232 14.7626 24.3232 14.4697 24.0303L9.46967 19.0303C9.17678 18.7374 9.17678 18.2626 9.46967 17.9697C9.76256 17.6768 10.2374 17.6768 10.5303 17.9697L15 22.4393L25.4697 11.9697C25.7626 11.6768 26.2374 11.6768 26.5303 11.9697Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span class="ml-2">Lorem, ipsum.</span>
+                        </li>
+                        <li class="mt-6 ml-4">
+                            <svg class="float-left" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="17.5" cy="17.5" r="17.5" fill="#F4C237"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M26.5303 11.9697C26.8232 12.2626 26.8232 12.7374 26.5303 13.0303L15.5303 24.0303C15.2374 24.3232 14.7626 24.3232 14.4697 24.0303L9.46967 19.0303C9.17678 18.7374 9.17678 18.2626 9.46967 17.9697C9.76256 17.6768 10.2374 17.6768 10.5303 17.9697L15 22.4393L25.4697 11.9697C25.7626 11.6768 26.2374 11.6768 26.5303 11.9697Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span class="ml-2">Lorem, ipsum dolor.</span>
+                        </li>
+                    </ul>
+                    <div class="flex justify-center my-6 ">
+                        <a href="" class="bg-[#F4C237] text-[13px] font-semibold py-[7px] px-[10px] mt-5 rounded-md">Beli Kelas</a>
+                    </div>                       
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end pilihan paket -->
+
+    <!-- testimoni -->
+    <section class="mx-4">
+        <div class="container mx-auto">
+            <div class="flex flex-wrap">
+                <div class="w-full md:w-1/2 order-2 md:order-1">
+                    <div class="mt-8 md:mt-16">
+                        <h1 class="text-center md:text-start text-3xl font-bold">Apa yang member kami katakan</h1>
+                        <p class="text-base text-center md:text-start font-normal mt-3">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempor, nulla iaculis eget id arcu est cras. Purus at interdum est in lorem aliquam. Arcu, enim purus cras commodo aliquam purus a, justo nulla. Quis duis vulputate egestas dictum et in risus curabitur enim. Risus non semper pellentesque ornare accumsan malesuada. Risus leo erat neque rhoncus egestas id imperdiet. Dictum sed tristique lacus, ut vulputate dapibus elit. Gravida donec amet, non donec praesent diam gravida.”</p>
+                        <div class="mt-3">
+                            <img class="float-left mr-3" src="img/Ellipse 7.svg" alt="">
+                            <h1 class="font-semibold">Davis Franci</h1>
+                            <p>Palembang, Sumatera Selatan</p>
+                        </div>
+                    </div>    
+                </div>
+                <div class="w-full md:w-1/2 order-1 md:order-2">
+                    <img class="max-x-full md:mr-0 mx-auto px-3 " src="img/Group 5.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end testimoni -->
+
+    <!-- CTA -->
+    <section class="mt-52 mx-4 mb-52">
+        <div class="container mx-auto bg-[#F4C237] rounded-lg pb-6">
+            <div class="flex flex-wrap">
+                <div class="w-full md:w-4/5">
+                    <div class="m-12">
+                        <h1 class="text-3xl font-bold">Siap Bergabung</h1>
+                        <p class="mt-6 font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices laoreet<br>eget in id donec arcu nunc. Tortor risus adipiscing elit euismod montes,<br> eget. Purus diam ultricies sed adipiscing at feugiat purus.</p>
+                    </div>
+                </div>
+                
+                <div class="w-full flex justify-end md:w-1/5">
+                    <div class="self-center mx-auto">
+                        <a href="" class="bg-[#056AAD] text-white text-[13px] font-semibold py-[7px] px-[10px] mt-5 rounded-md">Gabung Sekarang</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--end CTA -->
+
+    <!-- footer -->
+    <footer class=" pt-9 pb-12 bg-[#FAE3A4] mx-0">
+        <div class="container mx-0">
+            <div class="grid grid-cols-12 gap-3">
+
+                <div class="col-span-12 px-10 md:col-span-3">
+                    <h1 class="font-bold text-[#045285] text-4xl">Hangeul<span class="text-[#EC7589]">in</span></h1>
+                    <p class="mt-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna sollicitudin malesuada cras egestas gravida. Quis potenti suspendisse aliquet consectetur egestas et.</p>
+                </div>
+
+                <div class="col-span-12 px-10 md:col-span-2">
+                    <h1 class="font-bold mb-2">Legalitas</h1>
+                    <ul>
+                        <li>Kebijakan Privasi</li>
+                        <li>Persyaratan Layanan</li>
+                    </ul>
+                </div>
+
+                <div class="col-span-12 px-10 md:col-span-2">
+                    <h1 class="font-bold mb-2">Jelajahi</h1>
+                    <ul>
+                        <li>Kursus</li>
+                        <li>Beasiswa</li>
+                        <li>Tour</li>
+                    </ul>
+                </div>
+
+                <div class="col-span-12 px-10 md:col-span-2">
+                    <h1 class="font-bold mb-2">Perusahaan</h1>
+                    <ul>
+                        <li>Hubungi Kami</li>
+                        <li>Tentang Kami</li>
+                    </ul>
+                </div>
+
+                <div class="col-span-12 px-10 md:col-span-3">
+                    <h1 class="font-bold mb-2">Newsletter</h1>
+                    <p>Dapatkan pembaruan yang menarik dari kami</p>
+                    <input class="my-2" type="text" name="" id="" placeholder="email anda"><br>
+                    <div class="mt-3">
+                        <a href="" class="bg-[#056AAD] text-white text-[13px] font-semibold py-[7px] px-[10px] rounded-md">Subscribe</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+    <section class="my-2">
+        <div class="flex flex-wrap gap-3 md:gap-0">
+            <div class="w-full md:w-4/5">
+                <h1 class="ml-4 text-center md:text-start">Copyright 2024 Hak Cipta Terpelihara oleh Hangeulin</h1>
+            </div>
+
+            <div class="w-full md:w-1/5">
+                <img class="mx-auto md:mx-0" src="img/Group 7.svg" alt="">
+            </div>
+        </div>
+    </section>
+
+    
+</body>
+</html>
